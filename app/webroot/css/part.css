@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/*パーツ部分を当て込むスタイルシート*/
+
+
+.flag input {
+	display: none;
+}
+.flag label{
+	display: block;
+	float: left;
+	cursor: pointer;
+	width: 145px;
+	margin: 0;
+	padding: 10px;
+	background: #bdc3c7;
+	color: #869198;
+	font-size: 16px;
+	text-align: center;
+	line-height: 1;
+	transition: .2s;
+}
+.flag label:first-of-type{
+	border-radius: 3px 0 0 3px;
+}
+.flag label:last-of-type{
+	border-radius: 0 3px 3px 0;
+}
+.flag input[type="radio"]:checked + .switch-on,
+.flag input[type="checkbox"]:checked + .switch-on {
+	background-color: #a1b91d;
+	color: #fff;
+}
+.flag input[type="radio"]:checked + .switch-off {
+	background-color: #e67168;
+	color: #fff;
+}
+
+.custom-select {
+    background: #a1b91d;
+    /*border: 2px solid #239954;*/
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
